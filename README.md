@@ -48,7 +48,7 @@ to exit a python session.
 The APP using email verification so you will not be able to access the site without setting up a local email server. This is listed below. An alternative system is to manually create a ADMIn useer allowuing you tyo see the entire APP. You can do this by
 ```
 $ flask shell
-$ you = User(user="admin", email="admin@example.com", is_admin="True")
+$ you = User(username="admin", email="admin@example.com", is_admin="True")
 $ you.set_password("admin")
 $ db.session.add(you)
 $ db.session.commit()
